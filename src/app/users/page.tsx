@@ -13,7 +13,7 @@ interface User {
 // ২. একটি async ফাংশনাল কম্পোনেন্ট তৈরি করা
 export default async function UsersPage() {
   // ৩. সরাসরি সার্ভারেই fetch ব্যবহার করে ডেটা কল করা
-  const response = await fetch("https://jsonplaceholder.typicode.com/users-wrong-url");
+  const response = await fetch("https://jsonplaceholder.typicode.com/users");
   
   // ৪. রেসপন্সকে JSON অবজেক্টে রূপান্তর করা এবং টাইপ অ্যাসাইন করা
   const users: User[] = await response.json();
